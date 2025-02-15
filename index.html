@@ -6,29 +6,39 @@
     <title>homepage</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#b2b2b2]">
     <div class="text-5xl text-center font-medium">
-        <h1>Homepage</h1>
+        <h1 class="font-serif mb-3">Homepage</h1>
     </div>
     <div class="text-center gap-4 grid grid-rows-3 text-xl pb-10 sm:grid-cols-3">    
-        <a href="index.html">Homepage</a>
-        <a href="html/contact.html">Contact Us</a>
-        <a href="html/shop.html">Shop</a>
+        <a class="border-2 rounded border-[#333] bg-[#5E8C61] hover:drop-shadow-md" href="index.html">Homepage</a>
+        <a class="border-2 rounded border-[#333] bg-[#5E8C61] hover:drop-shadow-md" href="html/contact.html">Contact Us</a>
+        <a class="border-2 rounded border-[#333] bg-[#5E8C61] hover:drop-shadow-md" href="html/shop.html">Shop</a>
     </div>
 <div class="grid grid-cols-2 text-center">
     <div>
         <div class="flex justify-center items-center">
-            <img class="h-[250px]" src="images/—Pngtree—gray network placeholder_6398266.png" alt="Our team">
+            <div>
+            <picture class="h-25 lg:h-45">
+                <source srcset="images/Teamphoto.png" media="(min-width: 640px)" />
+                <source srcset="images/Teamphotosmall.png" media="(min-width: 639px)" />
+                <img src="/images/Teamphotosmall.png" />
+              </picture>
+              </div>
             </div>
-        <h3>Description:</h3>
+            <div class="border-2 rounded-[2vw] border-[#3b322c] bg-[#94E8B4]">
+        <h3 class="font-serif">Description:</h3>
         <p>We started this company in (random year) and we strive to bring you the best products we can.</p>
+        </div>
     </div>
-    <div>
+    <div class="m-2">
         <div class="flex justify-center items-center">
         <img src="images/3dprinter.jpg" alt="Picture of one of the 3D printers we offer">
         </div>
-        <h3>How we make our products:</h3>
+        <div class="border-2 rounded-[2vw] border-[#3b322c] bg-[#94E8B4]">
+        <h3 class="font-serif">How we make our products:</h3>
         <p>We always make sure to use eco-friendly materials in all of our products. We also offer 3d printers of many sizes that use recycled plastics for filiment to reduce waste.</p>
+        </div>
     </div>
 </div>
 </body>
